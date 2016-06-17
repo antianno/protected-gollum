@@ -84,6 +84,23 @@ A lot ;)
   as is the default with omnigollum, for example)
 * Definitely no ACLs, every user can do everything
 
+## Proper Setup
+
+There are currently no plans to publish this to [RubyGems.org](https://rubygems.org/),
+to use this with `bundle` one can put something like this in the Gemfile:
+
+```ruby
+source 'https://rubygems.org'
+gem 'gollum', :git => 'https://github.com/antianno/gollum.git'
+gem 'protected-gollum', :git => 'https://github.com/antianno/protected-gollum.git'
+# and for example:
+gem 'puma'
+```
+
+The gollum fork features a Logout button (when viewing a page, not everywhere,
+e.g. not in the History view etc.) and some minor modifications of the CSS,
+mainly to let the browser decide what fonts to use.
+
 ## Credits
 
 * [arr2036](https://github.com/arr2036) for [omnigollum](https://github.com/arr2036/omnigollum),
